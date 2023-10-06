@@ -15,6 +15,11 @@ namespace lab05
         public EntryDemo()
         {
             InitializeComponent();
+
+            StackLayout stack = new StackLayout();
+            var entry = new Entry { Text = "This is a read-onyl Entry" };
+            stack.Children.Add(entry);
+            Content = stack;
         }
     }
 }

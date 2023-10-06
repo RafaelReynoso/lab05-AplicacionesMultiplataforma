@@ -33,25 +33,29 @@ namespace lab05
             {
                 await Navigation.PushAsync(new EditorCode());
             };
-            Item3.Clicked += async (sender, e) =>
+            Item6.Clicked += async (sender, e) =>
             {
-                await Navigation.PushAsync(new DatepickerDemo());
+                await Navigation.PushAsync(new EntryDemo());
             };
-            Item3.Clicked += async (sender, e) =>
+            Item7.Clicked += async (sender, e) =>
             {
-                await Navigation.PushAsync(new DatepickerDemo());
+                await Navigation.PushAsync(new EntryCode());
             };
-            Item3.Clicked += async (sender, e) =>
+            Item8.Clicked += async (sender, e) =>
             {
-                await Navigation.PushAsync(new DatepickerDemo());
+                await Navigation.PushAsync(new LabelDemo());
             };
-            Item3.Clicked += async (sender, e) =>
+            Item9.Clicked += async (sender, e) =>
             {
-                await Navigation.PushAsync(new DatepickerDemo());
+                await Navigation.PushAsync(new LabelCode());
             };
-            Item3.Clicked += async (sender, e) =>
+            Item10.Clicked += async (sender, e) =>
             {
-                await Navigation.PushAsync(new DatepickerDemo());
+                await Navigation.PushAsync(new LocalImage());
+            };
+            Item11.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new EmbeddedImage());
             };
         }
     }

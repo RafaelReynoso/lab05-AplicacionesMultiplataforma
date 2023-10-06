@@ -4,9 +4,12 @@
              x:Class="lab05.LabelDemo">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Rhis is underlined text." TextDecorations="Underline"
+                   FontSize="Large"></Label>
+            <Label Text="This is text with strikethrough." TextDecorations="Strikethrough"></Label>
+            <Label Text="This is underlined text with strikethrough."
+                   TextDecorations="Underline,Strikethrough"></Label>
+            <Label Text="Esto es una prueba" BackgroundColor="red"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

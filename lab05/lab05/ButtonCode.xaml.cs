@@ -15,6 +15,33 @@ namespace lab05
         public ButtonCode()
         {
             InitializeComponent();
+
+            Title= "Code Button Click";
+
+            Label label = new Label
+            {
+                Text = "Click the Button Yelow",
+                FontSize= Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                VerticalOptions= LayoutOptions.CenterAndExpand,
+                HorizontalOptions= LayoutOptions.Center
+            };
+
+            Button button = new Button
+            {
+                Text = "Click to Rotate text!",
+                VerticalOptions= LayoutOptions.CenterAndExpand,
+                HorizontalOptions= LayoutOptions.Center
+            };
+            button.Clicked += async (sender, e) => await label.RelRotateTo(360, 1000);
+
+            Content = new StackLayout
+            {
+                Children=
+                {
+                    label,
+                    button
+                }
+            };
         }
     }
 }
