@@ -9,7 +9,7 @@
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand"></Label>
             <Image Source="{local2:ImageResource
-                lab05.prueba.jpg}"></Image>
+                lab05.prueba.png}"></Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
